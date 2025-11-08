@@ -7,7 +7,7 @@ from langchain_groq import ChatGroq
 from langgraph.checkpoint.sqlite import SqliteSaver
 from langgraph.graph.message import add_messages
 from langgraph.prebuilt import ToolNode, tools_condition
-from langchain_community.tools import DuckDuckGoSearchRun
+#from langchain_community.tools import DuckDuckGoSearchRun
 from langchain_core.tools import tool
 from dotenv import load_dotenv
 from os import getenv
@@ -28,7 +28,7 @@ llm =  ChatGroq(
 # 2. Tools
 # -------------------
 # Tools
-search_tool = DuckDuckGoSearchRun(region="us-en")
+#search_tool = DuckDuckGoSearchRun(region="us-en")
 
 @tool
 def calculator(first_num: float, second_num: float, operation: str) -> dict:
