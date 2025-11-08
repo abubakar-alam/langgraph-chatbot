@@ -28,7 +28,7 @@ llm =  ChatGroq(
 # 2. Tools
 # -------------------
 # Tools
-#search_tool = DuckDuckGoSearchRun(region="us-en")
+search_tool = DuckDuckGoSearchRun(region="us-en")
 
 @tool
 def calculator(first_num: float, second_num: float, operation: str) -> dict:
